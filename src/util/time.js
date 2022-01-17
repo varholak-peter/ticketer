@@ -1,7 +1,7 @@
 import moment from "moment";
-// import "moment/locale/sk";
+import "moment/locale/sk";
 
-// moment.locale("sk");
+moment.locale("sk");
 
 const fakeTimes = [
   {
@@ -23,7 +23,7 @@ export const generateFakeTimes = () =>
     .concat([
       {
         offsetDays: 0,
-        startTime: moment().subtract(7, "minutes").format("LT"),
+        startTime: moment().subtract(7, "minutes").format("HH:mm"),
       },
     ])
     .map(({ offsetDays, startTime }) => {
@@ -32,9 +32,14 @@ export const generateFakeTimes = () =>
         date: time.clone().format("DD-MM-YYYY"),
         divisorDate: time
           .clone()
+          .locale("en")
           .format("dddd,\u00A0MMM\u00A0D\u00A0•\u00A0HH:mm"),
         endTime: time.clone().add(1, "hour").format("HH:mm"),
-        receivedTime: time.clone().add(1, "minute").format("ddd HH:mm"),
+        receivedTime: time
+          .clone()
+          .add(1, "minute")
+          .locale("en")
+          .format("ddd HH:mm"),
         startTime: time.clone().format("HH:mm"),
       };
     });
