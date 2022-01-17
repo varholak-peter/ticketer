@@ -3,14 +3,22 @@
   "name": "Ticketer",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "16x16",
-      "type": "image/x-icon"
+      "src": "ticketer-logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "2500x2500",
+      "purpose": "any"
     },
     {
       "src": "ticketer.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon",
+      "purpose": "any"
     }
   ],
   "start_url": "./index.html",

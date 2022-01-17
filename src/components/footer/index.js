@@ -6,7 +6,7 @@ const { Fragment } = React;
 const cursorStyle = {
   position: "fixed",
   bottom: 18,
-  left: 112,
+  left: "29%",
   fontSize: 28,
   fontWeight: 300,
   zIndex: 3,
