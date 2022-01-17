@@ -3,7 +3,7 @@
   "name": "Ticketer",
   "icons": [
     {
-      "src": "ticketer-logo.svg",
+      "src": "ticketer.svg",
       "type": "image/svg+xml",
       "sizes": "2500x2500",
       "purpose": "any"
