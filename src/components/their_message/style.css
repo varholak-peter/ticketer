@@ -2,22 +2,20 @@
   justify-content: flex-start;
 }
 
+.message-wrapper--their .underline {
+  text-decoration: underline;
+  text-underline-offset: 1px;
+  text-decoration-thickness: 1px;
+}
 
 .message-wrapper--their .message {
   margin-right: 0;
-  margin-left: 12px;
-  background-color: #f7e58b;
-  border: 1px solid #e6d581;
+  padding: 7px 18px;
+  padding-right: 50px;
+  background-color: #303030;
+  border-radius: 20px;
 }
 
-.message-wrapper--their .message::before {
-  content: "";
-  position: absolute;
-  right: 100%;
-  top: 15px;
-  width: 0;
-  height: 0;
-  border-top: 6px solid transparent;
-  border-right: 8px solid #f7e58b;
-  border-bottom: 6px solid transparent;
+.message-wrapper--their .text {
+  color: #dedede;
 }

@@ -5,20 +5,19 @@ const { Fragment } = React;
 
 const cursorStyle = {
   position: "fixed",
-  bottom: 12,
-  left: 44,
+  bottom: 18,
+  left: 112,
   fontSize: 28,
   fontWeight: 300,
   zIndex: 3,
-  animation: "1s blink step-end infinite"
+  animation: "1s blink step-end infinite",
 };
 
 const footerStyle = {
   width: "100%",
   position: "fixed",
   bottom: 0,
-  borderTop: "2px solid #ccd3d9",
-  zIndex: 2
+  zIndex: 2,
 };
 
 export const Footer = () => (

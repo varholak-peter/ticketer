@@ -1,27 +1,23 @@
 import * as React from "react";
-import { Contact } from "components/contact";
 import "./style.css";
 
-export const TheirMessage = ({
-  date,
-  endTime,
-  messageHash,
-  receivedTime,
-  startTime
-}) => (
+export const TheirMessage = ({ date, endTime, messageHash, startTime }) => (
   <div className="message-wrapper message-wrapper--their">
-    <Contact />
     <div className="message">
       <span className="text">
-        DPMK, a.s.<br />
-        SMS prestupny CL 0,80<br />
-        EUR<br />
-        Platnost od {date}
+        DPMK, a.s.
         <br />
-        {startTime} do {endTime} hod.<br />
+        SMS prestupny CL 1,10
+        <br />
+        EUR
+        <br />
+        Platnost od <span className="underline">{date}</span>
+        <br />
+        <span className="underline">{startTime}</span> do{" "}
+        <span className="underline">{endTime}</span> hod.
+        <br />
         {messageHash}
       </span>
-      <div className="time">{receivedTime}</div>
     </div>
   </div>
 );
