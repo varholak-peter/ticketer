@@ -1,0 +1,27 @@
+.message-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.message {
+  position: relative;
+  margin-bottom: 12px;
+  padding: 4px 15px;
+  background-color: #36d55e;
+  border-radius: 9999px;
+}
+
+.message-wrapper--mine .message {
+  padding: 4px 16px;
+}
+
+.text {
+  display: inline-block;
+  font-size: 21px;
+  margin: 5px 0;
+  color: white;
+}
+
+.time {
+  color: #676767;
+}
